@@ -22,11 +22,18 @@ Go to visual studio installer - Modify- Look for "Desktop development with C++
 If you want to run the project without the debugger, you can press Ctrl + F5 or go to Debug > Start Without Debugging.
 (got error message when set the wrong main file - unable to start program C:\Users\..\hw0\build\x64-Release\CGL\src\CGL.lib s not a valid Win32 application)
 - i can see a window pop up with a rectangle with a brick texture.
-part 2 done! 
-![w1_quad](../images/w1_quad.png) 
-->
-pic ![w1_rotate_quad](../images/w1_rotate_quad.png)
-Part 3 - Types of Filters
-Part 4 - for fun
-![w1_sword_1](../images/w1_sword_1.png) 
-![w1_sword_2](../images/w1_sword_2.png)
+part 2 done!
+
+<img src="/images/w1_quad.png" alt="w1_quad" width="300"/>
+
+<p>pic</p>
+<img src="/images/w1_rotate_quad.png" alt="w1_rotate_quad" width="300"/>
+
+<h2>Part 3 - Types of Filters</h2>
+<h2>Part 4 - for fun</h2>
+
+<img src="/images/w1_sword_1.png" alt="w1_sword_1" width="300"/> 
+
+<img src="/images/w1_sword_2.png" alt="w1_sword_2" width="300"/>
+
+
