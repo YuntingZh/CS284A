@@ -62,6 +62,6 @@ For example, you could run this command:
 
 ./draw ../svg/basic/test1.svg
 Note: For Visual Studio, the output folder is 3 layers deep. Therefore you should use ./draw ../../../svg/basic/test1.svg For Linux / Unix / Mac commandline build, it should be 1 layer deep: ./draw ../svg/basic/test1.svg **All the IDEs has some form of debug / launch settings. You can use those to specify the SVG file and then you can use the debugger provided by the IDE. Anyways, the path should always be relative to the executable file!**
-I am trying to figure out how to set it up in Visual studio 
+I am trying to figure out how to set it up in Visual studio, but my Properties is blank T_T
 
-You'll see a flower composed of blue dots, based on point and line rasterization provided in the starter code. Most other SVG files won't render correctly until you work through the assignment. Here are the keyboard shortcuts available (some depend on you implementing various parts of the assignment):
+![Screenshot 2024-01-31 204011](https://github.com/YuntingZh/CS284A/assets/100269093/40ceedb0-afd0-4261-a6b6-0c1ffae8cb81)
