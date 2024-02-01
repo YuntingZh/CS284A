@@ -65,3 +65,55 @@ Note: For Visual Studio, the output folder is 3 layers deep. Therefore you shoul
 I am trying to figure out how to set it up in Visual studio, but my Properties is blank T_T
 
 ![Screenshot 2024-01-31 204011](https://github.com/YuntingZh/CS284A/assets/100269093/40ceedb0-afd0-4261-a6b6-0c1ffae8cb81)
+
+I tryed put this into my code (main.cpp) :
+
+```
+int main( ) {
+    // For debugging: manually set the SVG file path
+    char* argv[] = { "path_to_executable", "C:\\Users\\Magiccc\\Unity_dev\\hw1-rasterizer-sp24-the-cy-alliance\\svg\\basic\\test3.svg" };
+    int argc = sizeof(argv) / sizeof(char*);
+
+  if (argc < 2) {
+    msg("Not enough arguments. Pass in an .svg or a directory of .svg files.");
+    return 0;
+  }
+
+  vector<SVG*> svgs(loadPath(argv[1]));
+  if (svgs.empty()) {
+    msg("No svg files successfully loaded. Exiting.");
+    return 0;
+  }
+
+  // create application
+  DrawRend app(svgs);
+
+  if (argc > 4 && strcmp(argv[2],"nogl") == 0) {
+    app.init();
+    app.set_gl(false);
+    app.resize(stoi(argv[3]), stoi(argv[4]));
+    app.write_framebuffer();
+    return 0;
+  }
+
+  // create viewer
+  Viewer viewer = Viewer();
+
+  // set renderer
+  viewer.set_renderer(&app);
+
+  // init viewer
+  viewer.init();
+
+  // start viewer
+  viewer.start();
+
+  exit(EXIT_SUCCESS);
+
+  return 0;
+
+}
+
+```
+![Screenshot 2024-02-01 103803](https://github.com/YuntingZh/CS284A/assets/100269093/6883845c-56a8-4589-9f4c-71e4fdc429a5)
+
