@@ -36,4 +36,6 @@ part 2 done!
 
 <img src="/images/w1_sword_2.png" alt="w1_sword_2" width="300"/>
 
+Question: How do i set up Command Arguments?
 
+I went back to my HW0 and the properties is also blank T_T
