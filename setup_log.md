@@ -36,6 +36,32 @@ part 2 done!
 
 <img src="/images/w1_sword_2.png" alt="w1_sword_2" width="300"/>
 
-Question: How do i set up Command Arguments?
+----
+### hw1
+## Jan/31/2024
+draw.exe path/to/yourfile.svg
+Follow this to setup-> https://cs184.eecs.berkeley.edu/sp24/docs/building-assignments#step0
 
-I went back to my HW0 and the properties is also blank T_T
+if I click play: :[Drawer] Not enough arguments. Pass in an .svg or a directory of .svg files.
+
+C:\Users\Magiccc\Unity_dev\hw1-rasterizer-sp24-the-cy-alliance\out\build\x64-Release\draw.exe (process 7688) exited with code 0.
+To automatically close the console when debugging stops, enable Tools->Options->Debugging->Automatically close the console when debugging stops.
+Press any key to close this window . . .
+
+Using an IDE (like Visual Studio):
+
+If you're running your program in an IDE like Visual Studio, you'll need to set up the command line arguments in the project settings.
+In Visual Studio, you can do this by right-clicking on your project in the **Solution Explorer**, selecting 'Properties', navigating to the 'Debugging' tab, and then entering your command line arguments in the 'Command Arguments' field.
+
+![Screenshot 2024-01-31 202102](https://github.com/YuntingZh/CS284A/assets/100269093/9af3c005-3c2d-42e1-a4ac-a27f58d6d3f0)
+
+You can run the executable with the command
+
+./draw [path to svg file/folder to render]
+For example, you could run this command:
+
+./draw ../svg/basic/test1.svg
+Note: For Visual Studio, the output folder is 3 layers deep. Therefore you should use ./draw ../../../svg/basic/test1.svg For Linux / Unix / Mac commandline build, it should be 1 layer deep: ./draw ../svg/basic/test1.svg **All the IDEs has some form of debug / launch settings. You can use those to specify the SVG file and then you can use the debugger provided by the IDE. Anyways, the path should always be relative to the executable file!**
+I am trying to figure out how to set it up in Visual studio, but my Properties is blank T_T
+
+![Screenshot 2024-01-31 204011](https://github.com/YuntingZh/CS284A/assets/100269093/40ceedb0-afd0-4261-a6b6-0c1ffae8cb81)
