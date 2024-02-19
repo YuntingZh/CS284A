@@ -14,6 +14,8 @@ On 64-bit system (most systems today)
 ----
 Go to visual studio installer - Modify- Look for "Desktop development with C++
 (For CMake support, make sure the "C++ CMake tools for Windows" and any other relevant CMake components are selected.)
+On the left, press the add button and add a configuration with "x64-Release" (or "x86-Release" on a 32-bit machine).
+Then, find field "CMake toolchain file", enter [location of vcpkg]/scripts/buildsystems/vcpkg.cmake. (e.g. C:/vcpkg/scripts/buildsystems/vcpkg.cmake)
 - CMakeLists.txt, and then click "CMake Settings for Assignment1" no opt for Assignment1
 - CMake toolchain file： C:\Users\Magiccc\Documents\CS284A\vcpkg\scripts\buildsystems\vcpkg.cmake
 <!--我遇到一个问题就是我的build里没有build all 选项，原因在我的CMake setting里左侧configurations里不光有x64-Release，还加了一个x64-Debug，删除之后就能正常的build all了：）-->
